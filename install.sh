@@ -44,4 +44,4 @@ echo
 echo
 hostname -i | 
 ip addr show
-hostname -i | xargs -I {} echo "k8scp {}" >> /etc/hosts
+hostname -i | xargs -I {} echo "{} k8scp" >> /etc/hosts
